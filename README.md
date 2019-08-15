@@ -13,7 +13,7 @@ For this project you will be building a digital resume from scratch. You will be
 
 Follow these steps for completing your project.
 
-- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Submit a Pull-Request to merge '<firstName-lastName>' Branch into master (student's Repo). **Please don't merge your own pull request**
 - [x] Add your project manager as a reviewer on the pull-request
 - [x] Your project manager will count the project as complete by merging the branch back into master.
 
@@ -27,7 +27,7 @@ Follow these steps for completing your project.
 
 ## Task 3: Project Objectives
 
-- [ ] Review the [example resume](resume-example.png). Notice how simplistic the example resume is. Develop a simple layout of your choosing. If you are struggling to be creative, you may use the example resume as your design file.
+- [x] Review the [example resume](resume-example.png). Notice how simplistic the example resume is. Develop a simple layout of your choosing. If you are struggling to be creative, you may use the example resume as your design file.
       **Note: you are only required to build one page, anything more than that would be stretch.**
 - [x] The resume content will be provided by you. The content can be about you or a fictional character.
 - [x] Content: Navigation - Build a simple navigation with 4 items of your choosing
