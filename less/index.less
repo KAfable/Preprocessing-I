@@ -170,6 +170,11 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 40px;
+  @media (max-width: 500px) {
+    img {
+      display: none;
+    }
+  }
   img {
     border-radius: 40%;
   }
@@ -194,6 +199,13 @@ header {
 main {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    flex-flow: column;
+    .sidebar {
+      order: 1;
+      border-right: none !important;
+    }
+  }
   .sidebar {
     display: flex;
     flex-flow: column nowrap;

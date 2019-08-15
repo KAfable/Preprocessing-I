@@ -145,6 +145,11 @@ header {
   align-items: center;
   padding: 40px;
 }
+@media (max-width: 500px) {
+  header img {
+    display: none;
+  }
+}
 header img {
   border-radius: 40%;
 }
@@ -167,6 +172,15 @@ header .header-intro p .quote {
 main {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  main {
+    flex-flow: column;
+  }
+  main .sidebar {
+    order: 1;
+    border-right: none !important;
+  }
 }
 main .sidebar {
   display: flex;
