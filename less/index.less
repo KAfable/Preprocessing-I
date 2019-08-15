@@ -135,6 +135,20 @@ table {
 @background-color: #faf0e6;
 @header-font: "Roboto Mono", monospace;
 @main-purple: hsl(258.8, 21.1%, 29.8%);
+.header-style() {
+  font-family: @header-font;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.h4() {
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 * {
   box-sizing: border-box;
@@ -183,6 +197,7 @@ main {
   .sidebar {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
     padding: 0px 40px;
     width: 100%;
     border-right: 5px solid transparent;
@@ -219,20 +234,14 @@ main {
     }
   }
   h3 {
-    font-family: @header-font;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
+    .header-style();
   }
   .sidebar-content {
     padding-bottom: 40px;
     .entry {
       padding-bottom: 10px;
       h4 {
-        padding-bottom: 10px;
-        font-weight: bold;
+        .h4();
       }
       p {
         font-style: oblique;
@@ -241,5 +250,20 @@ main {
   }
   .main-content {
     padding: 0px 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    .entry-header {
+      padding-top: 30px;
+    }
+    .entry {
+      padding-bottom: 15px;
+      h4 {
+        .h4();
+      }
+      .quote {
+        font-style: italic;
+      }
+    }
   }
 }

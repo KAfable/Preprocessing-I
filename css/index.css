@@ -171,6 +171,7 @@ main {
 main .sidebar {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
   padding: 0px 40px;
   width: 100%;
   border-right: 5px solid transparent;
@@ -219,10 +220,30 @@ main .sidebar-content .entry {
 main .sidebar-content .entry h4 {
   padding-bottom: 10px;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 main .sidebar-content .entry p {
   font-style: oblique;
 }
 main .main-content {
   padding: 0px 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+main .main-content .entry-header {
+  padding-top: 30px;
+}
+main .main-content .entry {
+  padding-bottom: 15px;
+}
+main .main-content .entry h4 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main .main-content .entry .quote {
+  font-style: italic;
 }
