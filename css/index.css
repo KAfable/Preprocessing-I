@@ -1,1 +1,263 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+}
+#wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+@media (max-width: 500px) {
+  header img {
+    display: none;
+  }
+}
+header img {
+  border-radius: 40%;
+}
+header .header-intro {
+  text-align: center;
+}
+header .header-intro h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 72px;
+}
+header .header-intro p {
+  color: hsl(258.8, 21.1%, 69.8%);
+  vertical-align: middle;
+  font-size: 24px;
+}
+header .header-intro p .quote {
+  font-size: 48px;
+  margin: 0px 10px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  main {
+    flex-flow: column;
+  }
+  main .sidebar {
+    order: 1;
+    border-right: none !important;
+  }
+}
+main .sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 0px 40px;
+  width: 100%;
+  border-right: 5px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top, hsl(258.8, 21.1%, 29.8%) 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, hsl(258.8, 21.1%, 29.8%) 0%, #3a4ed5 100%);
+  border-image: linear-gradient(to bottom, hsl(258.8, 21.1%, 29.8%) 0%, #3a4ed5 100%);
+  border-image-slice: 1;
+}
+main .sidebar nav {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+main .sidebar nav a {
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+main .sidebar address {
+  padding: 40px 0px;
+}
+main .sidebar .contact-entry {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+}
+main .sidebar .contact-entry p {
+  width: 60%;
+  font-style: oblique;
+  text-align: center;
+}
+main h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+main .sidebar-content {
+  padding-bottom: 40px;
+}
+main .sidebar-content .entry {
+  padding-bottom: 10px;
+}
+main .sidebar-content .entry h4 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main .sidebar-content .entry p {
+  font-style: oblique;
+}
+main .main-content {
+  padding: 0px 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+main .main-content .entry-header {
+  padding-top: 30px;
+}
+main .main-content .entry {
+  padding-bottom: 15px;
+}
+main .main-content .entry h4 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main .main-content .entry .quote {
+  font-style: italic;
+}
